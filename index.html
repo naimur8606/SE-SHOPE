@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="home">
+        <header>
+            <div class="nav">
+                <div class="logo">
+                    <img src="cover.webp" alt="" width="35px">
+                    <h3>SE Shope</h3>
+                </div>
+                <ul id="manu-item">
+                    <li class="nav-item"><a class="nav-item-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-item-link" href="#">Mark-Products</a></li>
+                    <li class="nav-item"><a class="nav-item-link" href="#">Log-in</a></li>
+                    <li class="nav-item"><a class="nav-item-link" href="#">Contact</a></li>
+                </ul>
+                <button id="manu-btn" onclick="manu()">
+                    <div class="manu-var"></div>
+                    <div class="manu-var"></div>
+                    <div class="manu-var"></div>
+                </button>
+            </div>
+                        <h1>Welcome to Our SE Shope</h1>
+        </header>
+        <div class="choice-section">
+            <h2>Choice Your Product Section</h2>
+            <div class="choice-btn-row">
+                <button class="choice-btn"><a href="#phone">Phone</a></button>
+                <button class="choice-btn"><a href="#watch">Watch</a></button>
+                <button class="choice-btn"><a href="#laptop">Laptop</a></button>
+                <button class="choice-btn"><a href="#glass">Glasses</a></button>
+                <button class="choice-btn"><a href="#bag">Bags</a></button>
+            </div>
+        </div>
+        <div class="product-row">
+            <div class="product">
+                <img class="product-img" src="phone/Produktfotos_Apple_iPhone_13_Pro_1448.jpg" alt="">
+                <h5>Apple_iPhone_13_Pro</h5>
+                <h5>Price:_ _ $</h5> <br>
+                <a onclick="view('home' , 'iphone13')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+            </div>
+            <div class="product">
+                <img class="product-img" src="watch/NextPit_2022_Best_Smartwatches.jpg" alt="">
+                <h5>Samsung Watch</h5>
+                <h5>Price:_ _ $</h5><br>
+                <a onclick="view('home' , 'swatch')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+            </div>
+        </div>
+        <div class="product-row">
+            <div class="product">
+                <img class="product-img" src="laptop/Apple_MacBook-Pro_14-16-inch_10182021_big.jpg.slideshow-xlarge_2x.jpg" alt="">
+                <h5>MacBook-Pro</h5>
+                <h5>Price:_ _ $</h5><br>
+                <a onclick="view('home' , 'mac')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+            </div>
+            <div class="product">
+                <img class="product-img" src="glass/s-glass-8.webp" alt="">
+                <h5>Sun Glass</h5>
+                <h5>Price:_ _ $</h5><br>
+                <a  onclick="view('home' , 's-glass-8')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+            </div>
+        </div>
+        
+            <div class="weekly-discount">
+                <h2>Special Discount for Weekend</h2>
+                <img src="weekend-discount-icon.png" alt="" style="float: left; margin-left: 10%; width: 40%;">
+                <img src="weekend-discount.png" alt="" style="float: right; margin-right: 12%; width: 38%;">
+                <a  class="weekend-btn" href="#">For Weekend Special</a>
+            </div>
+            <div id="glass" class="glass-department">
+                <div class="product-row">
+                    <div class="product">
+                        <img class="product-img" src="glass/s-glass-4.webp" alt="">
+                        <h5>Sun Glass</h5>
+                        <h5>Price:_ _ $</h5> <br>
+                        <a onclick="view('home' , 's-glass-4')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                    </div>
+                    <div class="product">
+                        <img class="product-img" src="glass/s-glass-8.webp" alt="">
+                        <h5>Sun Glass</h5>
+                        <h5>Price:_ _ $</h5><br>
+                        <a onclick="view('home' , 's-glass-8')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                    </div>
+                </div>
+                <div class="product-row">
+                    <div class="product">
+                        <img class="product-img" src="glass/n-glass-2.png" alt="">
+                        <h5>Normal Style Glass</h5>
+                        <h5>Price:_ _ $</h5><br>
+                        <a onclick="view('home' , 'n-glass-2')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                    </div>
+                    <div class="product">
+                        <img class="product-img" src="glass/n-glass-7.jpg" alt="">
+                        <h5>Normal Style Glass</h5>
+                        <h5>Price:_ _ $</h5><br>
+                        <a onclick="view('home' , 'n-glass-7')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                    </div>
+                </div>
+                <div class="product-row">
+                    <div class="product">
+                        <img class="product-img" src="glass/n-glass-8.jpeg" alt="">
+                        <h5>Normal Style Glass</h5>
+                        <h5>Price:_ _ $</h5><br>
+                        <a onclick="view('home' , 'n-glass-8')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                    </div>
+                    <div id="see-more-btn" class="product">
+                        <h6 >See More +</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="monthly-discount">
+                <h2>Special Discount for Monthly</h2>
+                <img src="monthly-discount.png" alt="" style="float: left; width: 40%; margin-left: 10%;">
+                <img src="monthly-discount-icon.png" alt="" style="float: right; margin-right: 10%; width: 40%;">
+                <a class="monthly-btn" href="#">For Monthly Special</a>
+            </div>
+            <div id="phone" class="phone-department">
+                <div class="product-row">
+                    <div class="product">
+                        <img class="product-img" src="phone/Produktfotos_Apple_iPhone_13_Pro_1448.jpg" alt="">
+                        <h5>Apple_iPhone_13_Pro</h5>
+                        <h5>Price:_ _ $</h5> <br>
+                        <a onclick="view('home' , 'iphone13')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                    </div>
+                    <div class="product">
+                        <img class="product-img" src="phone/xiaomi-mi-11-pro-recenzia-nahladovka.jpg" alt="">
+                        <h5>Xiaomi-mi-11-pro</h5>
+                        <h5>Price:_ _ $</h5><br>
+                        <a onclick="view('home' , 'mi11')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                    </div>
+                </div>
+                <div class="product-row">
+                    <div class="product">
+                        <img class="product-img" src="phone/x70 pro.png" alt="">
+                        <h5>Vivo x70 pro</h5>
+                        <h5>Price:_ _ $</h5><br>
+                        <a onclick="view('home' , 'x70')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                    </div>
+                    <div class="product">
+                        <img class="product-img" src="phone/y02s.png" alt="">
+                        <h5>Vivo y02s</h5>
+                        <h5>Price:_ _ $</h5><br>
+                        <a onclick="view('home' , 'y02s')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                    </div>
+                </div>
+                <div class="product-row">
+                    <div class="product">
+                        <img class="product-img" src="phone/iphone_14_pro_lgd_1.jpg" alt="">
+                        <h5>iphone_14_pro</h5>
+                        <h5>Price:_ _ $</h5><br>
+                        <a onclick="view('home' , 'iphone14')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                    </div>
+                    <div id="see-more-btn" class="product">
+                        <h6 >See More +</h6>
+                    </div>
+                </div>
+            </div>
+
+        <div id="watch" class="watch-department">
+            <div class="product-row">
+                <div class="product">
+                    <img class="product-img" src="watch/watch-3.webp" alt="">
+                    <h5>Titan Watch</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a onclick="view('home' , 'titan')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                </div>
+                <div class="product">
+                    <img class="product-img" src="watch/Smartwatch_1_800x.webp" alt="">
+                    <h5>Xiaomi Watch</h5>
+                    <h5>Price:_ _ $</h5><br>
+                    <a onclick="view('home' , 'mi800')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                </div>
+            </div>
+            <div class="product-row">
+                <div class="product">
+                    <img class="product-img" src="watch/watch-1.jpg" alt="">
+                    <h5>GMT WM-018</h5>
+                    <h5>Price:_ _ $</h5><br>
+                    <a onclick="view('home' , 'GMT')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                </div>
+                <div class="product">
+                    <img class="product-img" src="watch/0bd96bbdc5c5fc83aa6050489a04cca16edc4c6a_S100689178.jpg" alt="">
+                    <h5>Apple Watch</h5>
+                    <h5>Price:_ _ $</h5><br>
+                    <a onclick="view('home' , 'iwatch')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                </div>
+            </div>
+            <div class="product-row">
+                <div class="product">
+                    <img class="product-img" src="watch/NextPit_2022_Best_Smartwatches.jpg" alt="">
+                    <h5>Samsung Watch</h5>
+                    <h5>Price:_ _ $</h5><br>
+                    <a onclick="view('home' , 'swatch')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                </div>
+                <div id="see-more-btn" class="product">
+                    <h6 >See More +</h6>
+                </div>
+            </div>
+        </div>
+    
+        <div id="laptop" class="laptop-department">
+            <div class="product-row">
+                <div class="product">
+                    <img class="product-img" src="laptop/1603742509311.png" alt="">
+                    <h5>Dell ---</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a onclick="view('home' , 'dell')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                </div>
+                <div class="product">
+                    <img class="product-img" src="laptop/Apple_MacBook-Pro_14-16-inch_10182021_big.jpg.slideshow-xlarge_2x.jpg" alt="">
+                    <h5>MacBook-Pro</h5>
+                    <h5>Price:_ _ $</h5><br>
+                    <a onclick="view('home' , 'mac')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                </div>
+            </div>
+            <div class="product-row">
+                <div class="product">
+                    <img class="product-img" src="laptop/hp-spectre-13-3_aerial-view.webp" alt="">
+                    <h5>hp-spectre</h5>
+                    <h5>Price:_ _ $</h5><br>
+                    <a onclick="view('home' , 'hp-spectre')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                </div>
+                <div class="product">
+                    <img class="product-img" src="laptop/HP-Laptops-in-Nepal.webp" alt="">
+                    <h5>HP-Nepal</h5>
+                    <h5>Price:_ _ $</h5><br>
+                    <a onclick="view('home' , 'nepal')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                </div>
+            </div>
+            <div class="product-row">
+                <div class="product">
+                    <img class="product-img" src="laptop/lenovo-laptop-thinkpad-t580-hero.webp" alt="">
+                    <h5>lenovo-thinkpad-t580</h5>
+                    <h5>Price:_ _ $</h5><br>
+                    <a onclick="view('home' , 'lenovo')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                </div>
+                <div id="see-more-btn" class="product">
+                    <h6 >See More +</h6>
+                </div>
+            </div>
+        </div>
+        <div class="weekly-discount">
+            <h2>Special Discount for Weekend</h2>
+            <img src="weekend-discount-icon.png" alt="" style="float: left; margin-left: 10%; width: 40%;">
+            <img src="weekend-discount.png" alt="" style="float: right; margin-right: 12%; width: 38%;">
+            <a  class="weekend-btn" href="#">For Weekend Special</a>
+        </div>
+        <div id="bag" class="bag-department">
+            <div class="product-row">
+                <div class="product">
+                    <img class="product-img" src="bag/bag-2.jpg" alt="">
+                    <h5>Office Bag</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a onclick="view('home' , 'bag-2')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                </div>
+                <div class="product">
+                    <img class="product-img" src="bag/bag-8.jpg" alt="">
+                    <h5>School Bag</h5>
+                    <h5>Price:_ _ $</h5><br>
+                    <a onclick="view('home' , 'bag-8')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                </div>
+            </div>
+            <div class="product-row">
+                <div class="product">
+                    <img class="product-img" src="bag/bag-7.jpg" alt="">
+                    <h5>School Bag</h5>
+                    <h5>Price:_ _ $</h5><br>
+                    <a onclick="view('home' , 'bag-7')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                </div>
+                <div class="product">
+                    <img class="product-img" src="bag/bag-9.jpg" alt="">
+                    <h5>School Bag</h5>
+                    <h5>Price:_ _ $</h5><br>
+                    <a onclick="view('home' , 'bag-9')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                </div>
+            </div>
+            <div class="product-row">
+                <div class="product">
+                    <img class="product-img" src="bag/cover2.jpg" alt="">
+                    <h5>Traveling Bag</h5>
+                    <h5>Price:_ _ $</h5><br>
+                    <a onclick="view('home' , 'cover2')" class="view-btn" href="#">View Details</a> <a class="view-btn" href="">Buy</a> 
+                </div>
+                <div id="see-more-btn" class="product">
+                    <h6 >See More +</h6>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-text">
+                SE Shope<br>
+                Address: Dhaka, Bangladesh <br>
+                Email: mdnaimurrahman8606@gmail.com <br>
+                Phone: 01621128606
+            </div>
+            <div class="app-icon">
+                <img src="app-icon.png" alt="" height="100px" width="70%">
+            </div>
+        </footer>
+    </div>
+    <div id="">
+        <div id="iphone13" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="phone/Produktfotos_Apple_iPhone_13_Pro_1448.jpg" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>Apple_iPhone_13_Pro</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('iphone13' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="mi11" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="phone/xiaomi-mi-11-pro-recenzia-nahladovka.jpg" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>Xiaomi-mi-11-pro</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('mi11' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="x70" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="phone/x70 pro.png" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>Vivo x70 pro</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('x70' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="y02s" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="phone/y02s.png" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>Vivo y02s</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('y02s' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="iphone14" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="phone/iphone_14_pro_lgd_1.jpg" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>iphone_14_pro</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('iphone14' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="titan" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="watch/watch-3.webp" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>Titan Watch</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('titan' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="mi800" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="watch/Smartwatch_1_800x.webp" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>Xiaomi Watch</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('mi800' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="GMT" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="watch/watch-1.jpg" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>GMT WM-018</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('GMT' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="iwatch" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="watch/0bd96bbdc5c5fc83aa6050489a04cca16edc4c6a_S100689178.jpg" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>Apple Watch</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('iwatch' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="swatch" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="watch/NextPit_2022_Best_Smartwatches.jpg" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>Samsung Watch</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('swatch' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="dell" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="laptop/1603742509311.png" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>Dell ---</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('dell' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="mac" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="laptop/Apple_MacBook-Pro_14-16-inch_10182021_big.jpg.slideshow-xlarge_2x.jpg" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>MacBook-Pro</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('mac' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="hp-spectre" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="laptop/hp-spectre-13-3_aerial-view.webp" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>hp-spectre</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('hp-spectre' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="nepal" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="laptop/HP-Laptops-in-Nepal.webp" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>HP-Nepal</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('nepal' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="lenovo" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="laptop/lenovo-laptop-thinkpad-t580-hero.webp" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>lenovo-thinkpad-t580</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('lenovo' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="s-glass-4" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="glass/s-glass-4.webp" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>Sun Glass</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('s-glass-4' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="s-glass-8" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="glass/s-glass-8.webp" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>Sun Glass</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('s-glass-8' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="n-glass-2" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="glass/n-glass-2.png" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>Normal Style Glass</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('n-glass-2' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="n-glass-7" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="glass/n-glass-7.jpg" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>Normal Style Glass</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('n-glass-7' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="n-glass-8" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="glass/n-glass-8.jpeg" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>Normal Style Glass</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('n-glass-8' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="bag-2" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="bag/bag-2.jpg" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>Office Bag</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('bag-2' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="bag-8" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="bag/bag-8.jpg" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>School Bag</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('bag-8' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="bag-7" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="bag/bag-7.jpg" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>School Bag</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('bag-7' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="bag-9" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="bag/bag-9.jpg" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>School Bag</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('bag-9' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    
+        <div id="cover2" class="single-product-page">
+            <h1 class="single-p-p-heading">Product Review...</h1>
+            <div class="product-row">
+                <div class="product-pic">
+                    <img src="bag/cover2.jpg" alt="" width="100%">
+                </div>
+                <div class="product-view">
+                    <h5>Traveling Bag</h5>
+                    <h5>Price:_ _ $</h5> <br>
+                    <a class="view-btn" href="">Buy Now</a> 
+                    <p class="product-dtails">
+                        Ram: _ _ <br>
+                        Rom: _ _ <br>
+                        Camera: _ _ <br>
+                        Battery: _ _ <br>
+                        Android version: _ _ <br>
+                        Processor: _ _ 
+                    </p>
+                    <a onclick="view('cover2' , 'home')" class="view-btn">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
